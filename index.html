@@ -1,16 +1,17 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Présentation du Projet</title>
+  <title>Présentation du Projet WASAS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
+
   <!-- Header avec navigation -->
   <header class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center p-6">
-      <h1 class="text-2xl font-bold">Witekio Advanced Security Accelerator Suite (WASAS) </h1>
+      <h1 class="text-2xl font-bold">Witekio Advanced Security Accelerator Suite (WASAS)</h1>
       <nav class="space-x-6 text-sm">
         <a href="#contexte" class="hover:text-gray-300 transition">Contexte</a>
         <a href="#articles" class="hover:text-gray-300 transition">Articles</a>
@@ -24,10 +25,10 @@
     <h2 class="text-2xl font-semibold mb-4">Contexte du Projet</h2>
     <p class="leading-relaxed">
       L’objectif du projet WASAS est de développer une solution accessible et clé en main pour le 
-développement, la mise en œuvre et la gestion de solutions IOT sécurisées. Cette solution permettra 
-aux PMEs et ETIs un accès facilité aux technologies de l’IOT et de la cybersécurité, du hardware 
-jusqu’à la plateforme cloud, afin de dynamiser la création de nouvelles solutions connectées et 
-sécurisées. 
+      développement, la mise en œuvre et la gestion de solutions IoT sécurisées. Cette solution permettra 
+      aux PMEs et ETIs un accès facilité aux technologies de l’IoT et de la cybersécurité, du hardware 
+      jusqu’à la plateforme cloud, afin de dynamiser la création de nouvelles solutions connectées et 
+      sécurisées.
     </p>
   </section>
 
@@ -35,25 +36,34 @@ sécurisées.
   <section id="articles" class="bg-gray-100 p-8">
     <div class="container mx-auto">
       <h2 class="text-2xl font-semibold mb-6">Articles publiés</h2>
-      
-      <!-- Article Card -->
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-          <h3 class="text-xl font-bold">Resilient and Adaptive Routing in Enterprise IoT: The RRP
-Protocol</h3>
-          <p class="text-sm text-gray-600 mt-1">Sakina Oussane, Nadia Kabachi, Elhadj Benkhelifa, Haroun Benkaouha </p>
+
+      <!-- Liste des titres -->
+      <div class="space-y-2">
+        <button onclick="openModal('article1')" class="text-blue-600 hover:underline text-left w-full">Resilient and Adaptive Routing in Enterprise IoT: The RRP Protocol</button>
+        <button onclick="openModal('article2')" class="text-blue-600 hover:underline text-left w-full">Fault-Tolerant Architecture for Smart Enterprises</button>
+      </div>
+
+      <!-- Modale pour Article 1 -->
+      <div id="article1" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded shadow-lg max-w-lg">
+          <h3 class="text-xl font-bold">Resilient and Adaptive Routing in Enterprise IoT: The RRP Protocol</h3>
+          <p class="text-sm text-gray-600 mt-1">Sakina Oussane, Nadia Kabachi, Elhadj Benkhelifa, Haroun Benkaouha</p>
           <p class="mt-3 text-gray-700 text-justify">
             Cet article présente le protocole RRP (Resilient Enterprise Routing Protocol), conçu pour les réseaux d’entreprise 
-			afin d’assurer des communications fiables en cas de panne de nœuds ou de serveurs. L’IoT, en intégrant une couche d’intelligence
-			dans les environnements d’entreprise, offre des avantages tels que la surveillance en temps réel, l’automatisation des processus et 
-			l’optimisation des ressources. Cependant, des défis persistent, notamment la gestion de l’énergie, la QoS, la transmission de données 
-			fiable et la résilience aux pannes. RRP, basé sur un mécanisme de reroutage dynamique, garantit une QoS optimale. 
-			Les simulations menées avec OMNeT++ montrent que RRP améliore significativement la résilience et la réactivité des infrastructures IoT 
-			en milieu professionnel.
+            afin d’assurer des communications fiables en cas de panne de nœuds ou de serveurs. L’IoT, en intégrant une couche d’intelligence
+            dans les environnements d’entreprise, offre des avantages tels que la surveillance en temps réel, l’automatisation des processus et 
+            l’optimisation des ressources. Cependant, des défis persistent, notamment la gestion de l’énergie, la QoS, la transmission de données 
+            fiable et la résilience aux pannes. RRP, basé sur un mécanisme de reroutage dynamique, garantit une QoS optimale. 
+            Les simulations menées avec OMNeT++ montrent que RRP améliore significativement la résilience et la réactivité des infrastructures IoT 
+            en milieu professionnel.
           </p>
+          <button onclick="closeModal('article1')" class="mt-4 text-red-600 hover:underline">Fermer</button>
         </div>
+      </div>
 
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+      <!-- Modale pour Article 2 -->
+      <div id="article2" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded shadow-lg max-w-lg">
           <h3 class="text-xl font-bold">Fault-Tolerant Architecture for Smart Enterprises</h3>
           <p class="text-sm text-gray-600 mt-1">S. Oussane et al., 2025</p>
           <p class="mt-3 text-gray-700 text-justify">
@@ -61,8 +71,10 @@ Protocol</h3>
             garantir la continuité des services critiques dans les entreprises intelligentes. Les résultats montrent une amélioration 
             significative de la tolérance aux pannes dans les scénarios simulés.
           </p>
+          <button onclick="closeModal('article2')" class="mt-4 text-red-600 hover:underline">Fermer</button>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -77,7 +89,7 @@ Protocol</h3>
     <p>&copy; 2025 Projet IoT Résilient - Tous droits réservés</p>
   </footer>
 
-  <!-- Smooth Scroll -->
+  <!-- Smooth Scroll & Modales -->
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
@@ -87,6 +99,16 @@ Protocol</h3>
         });
       });
     });
+
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+      document.getElementById(id).classList.add('flex');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+      document.getElementById(id).classList.remove('flex');
+    }
   </script>
+
 </body>
 </html>
