@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation du Projet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header avec navigation -->
+  <header class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-6">
+      <h1 class="text-2xl font-bold">Projet WASAS</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="#contexte" class="hover:text-gray-300 transition">Contexte</a>
+        <a href="#articles" class="hover:text-gray-300 transition">Articles</a>
+        <a href="#contact" class="hover:text-gray-300 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Contexte -->
+  <section id="contexte" class="container mx-auto p-8">
+    <h2 class="text-2xl font-semibold mb-4">Contexte du Projet</h2>
+    <p class="leading-relaxed">
+      Ce projet vise à développer une architecture IoT résiliente, capable de gérer les pannes et d'assurer la continuité du service 
+      dans les environnements critiques, tels que les réseaux de capteurs corporels (WBAN) et les entreprises intelligentes. 
+      L'objectif est de proposer des protocoles de routage robustes et efficaces, et de les valider via des simulations.
+    </p>
+  </section>
+
+  <!-- Section Articles -->
+  <section id="articles" class="bg-gray-100 p-8">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">Articles publiés</h2>
+      
+      <!-- Article Card -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold">Resilient Routing Protocol for Inter-WBAN and Intra-WBAN Networks</h3>
+          <p class="text-sm text-gray-600 mt-1">S. Oussane, C. Benzaïd, H. Benzaïd, 2025</p>
+          <p class="mt-3 text-gray-700 text-justify">
+            Cet article propose deux protocoles de routage tolérants aux pannes (IRAWP et IREWP) conçus pour assurer la résilience 
+            dans les réseaux WBAN. Les protocoles sont évalués via des simulations OMNeT++ et Castalia, démontrant leur efficacité 
+            en termes de fiabilité et de consommation énergétique.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold">Fault-Tolerant Architecture for Smart Enterprises</h3>
+          <p class="text-sm text-gray-600 mt-1">S. Oussane et al., 2025</p>
+          <p class="mt-3 text-gray-700 text-justify">
+            Cet article présente une architecture IoT résiliente intégrant des mécanismes de basculement et de redondance pour 
+            garantir la continuité des services critiques dans les entreprises intelligentes. Les résultats montrent une amélioration 
+            significative de la tolérance aux pannes dans les scénarios simulés.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="container mx-auto p-8">
+    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+    <p>Pour plus d'informations, veuillez contacter : <span class="font-medium">sakina.oussane@example.com</span></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center p-4">
+    <p>&copy; 2025 Projet IoT Résilient - Tous droits réservés</p>
+  </footer>
+
+  <!-- Smooth Scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
