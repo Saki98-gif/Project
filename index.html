@@ -103,32 +103,23 @@
 </div>
 
   <!-- Modale pour Article 3 -->
-<div id="article3" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
-  <div class="bg-white p-6 rounded shadow-lg max-w-lg max-h-[80vh] flex flex-col">
-    <h3 class="text-xl font-bold mb-2">Resilient and Adaptive Routing in Enterprise IoT: The RRP Protocol</h3>
-    <p class="text-sm text-gray-600 mb-4">Olfa DALLEL, Nadia Kabachi, Elhadj Benkhelifa</p>
-    
-    <!-- Contenu scrollable -->
-    <div class="overflow-y-auto text-gray-700 mb-4" style="max-height: calc(80vh - 120px);">
-      <p>
-        Cet article présente l'introduction d'un langage de description uniforme pour les objets IoT sociaux (UDL-SIoT), conçu pour faciliter l'intégration des appareils IoT aux plateformes de l'Internet social des objets (SIoT). 
-        Dans les systèmes IoT classiques, des langages tels que le langage de description uniforme (UDL) sont utilisés pour décrire formellement les caractéristiques et fonctionnalités des objets.
-        Cependant, avec l'intégration des concepts de réseaux sociaux dans l'IoT et l'émergence du SIoT, il devient nécessaire de spécifier comment les objets peuvent interagir socialement.
-      </p>
-      <p class="mt-2">
-        Actuellement, la définition du profil social initial d'un objet se limite souvent à la spécification de relations sociales via des règles prédéfinies, ce qui restreint l'automatisation et l'évolutivité.
-        Pour surmonter cette limite, l’UDL-SIoT propose une méthode structurée permettant de définir les caractéristiques des appareils IoT — fonctionnelles, techniques, sociales, de qualité de service et de sécurité — et de les exploiter pour créer leurs profils sociaux.
-      </p>
-      <p class="mt-2">
-        De plus, un générateur de profils sociaux basé sur le Deep Learning (DL) est proposé afin d’automatiser la création des profils. Ce générateur attribue un profil social aux objets rejoignant le réseau pour la première fois et prédit leurs connexions sociales potentielles.
-      </p>
-      <p class="mt-2">
-        L’évaluation, réalisée sur un jeu de données SIoT réel, démontre une précision de 92 % dans la prédiction des relations sociales. Ces relations prédites peuvent être utilisées pour automatiser la spécification des règles de socialisation, permettant ainsi aux objets IoT d'établir des relations sociales de manière autonome.
-      </p>
-    </div>
+<div id="article3" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 overflow-auto">
+  <div class="bg-white p-6 rounded shadow-lg max-w-lg max-h-[90vh] overflow-y-auto">
+    <h3 class="text-xl font-bold">Uniform Description Language for Social IoT Objects (UDL-SIoT)</h3>
+    <p class="text-sm text-gray-600 mt-1">Olfa DALLEL, Nadia Kabachi, Elhadj Benkhelifa</p>
+    <p class="mt-3 text-gray-700 text-justify">
+      Cet article présente l'introduction d'un langage de description uniforme pour les objets IoT sociaux (UDL-SIoT), conçu pour faciliter l'intégration des appareils IoT aux plateformes de l'Internet social des objets (SIoT).  
+      Dans les systèmes IoT classiques, des langages tels que le langage de description uniforme (UDL) sont utilisés pour décrire formellement les caractéristiques et fonctionnalités des objets.  
+      Cependant, avec l'intégration des concepts de réseaux sociaux dans l'IoT et l'émergence du SIoT, il devient nécessaire de spécifier comment les objets peuvent interagir socialement.
 
-    <!-- Bouton fermer -->
-    <button onclick="closeModal('article3')" class="mt-auto text-red-600 hover:underline">Fermer</button>
+      Actuellement, la définition du profil social initial d'un objet se limite souvent à la spécification de relations sociales via des règles prédéfinies, ce qui restreint l'automatisation et l'évolutivité.  
+      Pour surmonter cette limite, l’UDL-SIoT propose une méthode structurée permettant de définir les caractéristiques des appareils IoT — fonctionnelles, techniques, sociales, de qualité de service et de sécurité — et de les exploiter pour créer leurs profils sociaux.
+
+      De plus, un générateur de profils sociaux basé sur le Deep Learning (DL) est proposé afin d’automatiser la création des profils. Ce générateur attribue un profil social aux objets rejoignant le réseau pour la première fois et prédit leurs connexions sociales potentielles.
+
+      L’évaluation, réalisée sur un jeu de données SIoT réel, démontre une précision de 92 % dans la prédiction des relations sociales. Ces relations prédites peuvent être utilisées pour automatiser la spécification des règles de socialisation, permettant ainsi aux objets IoT d'établir des relations sociales de manière autonome.
+    </p>
+    <button onclick="closeModal('article3')" class="mt-4 text-red-600 hover:underline">Fermer</button>
   </div>
 </div>
 
