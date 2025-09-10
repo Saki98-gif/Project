@@ -127,51 +127,52 @@
     </div>
   </section>
   
-  <!-- Section Sponsors -->
+<!-- Section Sponsors -->
 <section id="sponsors" class="bg-gray-50 p-4 md:p-8">
   <div class="container mx-auto">
     <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-center md:text-left">Sponsors</h2>
-    <div class="flex flex-wrap justify-center md:justify-start gap-6">
-  <!-- Sponsor 1 (Bpifrance) -->
-<div class="w-40 h-24 flex items-center justify-center bg-white rounded-lg shadow-md p-2 cursor-pointer" onclick="openModal('bpifrance')">
-  <img src="Bpifrance.jpeg" alt="Bpifrance" class="object-contain w-full h-full">
-</div>
+    <div class="flex flex-wrap justify-center md:justify-start gap-12"> <!-- plus d'espace entre les sponsors -->
 
-<!-- Modale Bpifrance -->
-<div id="bpifrance" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 overflow-auto">
-  <div class="bg-white p-6 rounded shadow-lg max-w-lg max-h-[90vh] overflow-y-auto">
-    <h3 class="text-xl font-bold mb-2">Bpifrance</h3>
-    <p class="text-gray-700 text-justify">
-      Bpifrance est une banque publique d'investissement française, ayant pour mission le financement et le développement des entreprises. 
-      Elle est née à la fin de l'année 2012 du regroupement d'Oséo, de CDC Entreprises, du Fonds stratégique d'investissement (FSI) et du FSI Régions. 
-      Elle est en particulier chargée de soutenir les petites et moyennes entreprises, les entreprises de taille intermédiaire et les entreprises innovantes en appui des politiques publiques de l'État et des régions. 
-      Son siège est situé à Maisons-Alfort, dans le Val-de-Marne.
-    </p>
-    <button onclick="closeModal('bpifrance')" class="mt-4 text-red-600 hover:underline">Fermer</button>
-  </div>
-</div>
+      <!-- Sponsor 1 (Bpifrance) -->
+      <div class="w-60 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4 cursor-pointer" onclick="openModal('bpifrance')"> <!-- plus grand -->
+        <img src="Bpifrance.jpeg" alt="Bpifrance" class="object-contain w-full h-full">
+      </div>
 
-<!-- Sponsor 2 (France2030) -->
-<div class="w-40 h-24 flex items-center justify-center bg-white rounded-lg shadow-md p-2 cursor-pointer" onclick="openModal('France2030')">
-  <img src="Frace2030.jpeg" alt="France2030" class="object-contain w-full h-full">
-</div>
+      <!-- Modale Bpifrance -->
+      <div id="bpifrance" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 overflow-auto">
+        <div class="bg-white p-6 rounded shadow-lg max-w-lg max-h-[90vh] overflow-y-auto">
+          <h3 class="text-xl font-bold mb-2">Bpifrance</h3>
+          <p class="text-gray-700 text-justify">
+            Bpifrance est une banque publique d'investissement française, ayant pour mission le financement et le développement des entreprises. 
+            Elle est née à la fin de l'année 2012 du regroupement d'Oséo, de CDC Entreprises, du Fonds stratégique d'investissement (FSI) et du FSI Régions. 
+            Elle est en particulier chargée de soutenir les petites et moyennes entreprises, les entreprises de taille intermédiaire et les entreprises innovantes en appui des politiques publiques de l'État et des régions. 
+            Son siège est situé à Maisons-Alfort, dans le Val-de-Marne.
+          </p>
+          <button onclick="closeModal('bpifrance')" class="mt-4 text-red-600 hover:underline">Fermer</button>
+        </div>
+      </div>
 
-<!-- Modale France2030 -->
-<div id="France2030" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 overflow-auto">
-  <div class="bg-white p-6 rounded shadow-lg max-w-lg max-h-[90vh] overflow-y-auto">
-    <h3 class="text-xl font-bold mb-2">France2030</h3>
-    <p class="text-gray-700 text-justify">
-      France 2030 mobilise 54 milliards d’euros pour accompagner la transformation de nos entreprises, écoles, universités et organismes de recherche. L’objectif est de les aider à relever les défis écologiques et économiques à venir, tout en faisant émerger les futurs champions des filières d’excellence.
-      Le plan prévoit que 50 % des dépenses soient consacrées à la décarbonation de l’économie, et 50 % à soutenir les acteurs innovants, en évitant tout financement nuisible à l’environnement.
-    </p>
-    <button onclick="closeModal('France2030')" class="mt-4 text-red-600 hover:underline">Fermer</button>
-  </div>
-</div>
+      <!-- Sponsor 2 (France2030) -->
+      <div class="w-60 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4 cursor-pointer" onclick="openModal('France2030')"> <!-- plus grand -->
+        <img src="France2030.jpeg" alt="France2030" class="object-contain w-full h-full">
+      </div>
 
+      <!-- Modale France2030 -->
+      <div id="France2030" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 overflow-auto">
+        <div class="bg-white p-6 rounded shadow-lg max-w-lg max-h-[90vh] overflow-y-auto">
+          <h3 class="text-xl font-bold mb-2">France2030</h3>
+          <p class="text-gray-700 text-justify">
+            France 2030 mobilise 54 milliards d’euros pour accompagner la transformation de nos entreprises, écoles, universités et organismes de recherche. L’objectif est de les aider à relever les défis écologiques et économiques à venir, tout en faisant émerger les futurs champions des filières d’excellence.
+            Le plan prévoit que 50 % des dépenses soient consacrées à la décarbonation de l’économie, et 50 % à soutenir les acteurs innovants, en évitant tout financement nuisible à l’environnement.
+          </p>
+          <button onclick="closeModal('France2030')" class="mt-4 text-red-600 hover:underline">Fermer</button>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
+
 
 
   <!-- Section Contact -->
