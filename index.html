@@ -37,8 +37,8 @@
   </div>
   
   <!-- Contexte -->
-  <div class="mb-12">
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-left">Contexte P</h2>
+  <div class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-left">Contexte </h2>
     <p class="leading-relaxed text-gray-800">
       L’objectif du projet WASAS est de développer une solution accessible et clé en main pour le 
       développement, la mise en œuvre et la gestion de solutions IoT sécurisées. Cette solution permettra 
@@ -60,14 +60,15 @@
       <!-- Liste des titres -->
       <div class="space-y-2">
         <button onclick="openModal('article1')" class="text-blue-600 hover:underline text-left w-full">Resilient and Adaptive Routing in Enterprise IoT: The RRP Protocol</button>
-        <button onclick="openModal('article2')" class="text-blue-600 hover:underline text-left w-full">Fault-Tolerant Architecture for Smart Enterprises</button>
+        <button onclick="openModal('article2')" class="text-blue-600 hover:underline text-left w-full">A Modular Framework for Anomaly Detection in IoT Networks with Explainability</button>
+      <button onclick="openModal('article3')" class="text-blue-600 hover:underline text-left w-full">A Modular Framework for Anomaly Detection in IoT Networks with Explainability</button>
       </div>
 
       <!-- Modale pour Article 1 -->
       <div id="article1" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
         <div class="bg-white p-6 rounded shadow-lg max-w-lg">
           <h3 class="text-xl font-bold">Resilient and Adaptive Routing in Enterprise IoT: The RRP Protocol</h3>
-          <p class="text-sm text-gray-600 mt-1">Sakina Oussane, Nadia Kabachi, Elhadj Benkhelifa, Haroun Benkaouha</p>
+          <p class="text-sm text-gray-600 mt-1">Sakina Oussane, Nadia Kabachi, Elhadj BENKHELIFA, Haroun Benkaouha</p>
           <p class="mt-3 text-gray-700 text-justify">
             Cet article présente le protocole RRP (Resilient Enterprise Routing Protocol), conçu pour les réseaux d’entreprise 
             afin d’assurer des communications fiables en cas de panne de nœuds ou de serveurs. L’IoT, en intégrant une couche d’intelligence
@@ -84,17 +85,42 @@
       <!-- Modale pour Article 2 -->
       <div id="article2" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
         <div class="bg-white p-6 rounded shadow-lg max-w-lg">
-          <h3 class="text-xl font-bold">Fault-Tolerant Architecture for Smart Enterprises</h3>
-          <p class="text-sm text-gray-600 mt-1">S. Oussane et al., 2025</p>
+          <h3 class="text-xl font-bold">A Modular Framework for Anomaly Detection in IoT Networks with Explainability</h3>
+          <p class="text-sm text-gray-600 mt-1">Amina LAMHARZI, Mériem ZOUZOU Nadia KABACHI, Elhadj BENKHELIFA</p>
           <p class="mt-3 text-gray-700 text-justify">
-            Cet article présente une architecture IoT résiliente intégrant des mécanismes de basculement et de redondance pour 
-            garantir la continuité des services critiques dans les entreprises intelligentes. Les résultats montrent une amélioration 
-            significative de la tolérance aux pannes dans les scénarios simulés.
+            Cet article présente un cadre modulaire pour la détection d'anomalies dans les environnements IoT, conçu pour répondre aux défis posés par l'augmentation massive des appareils connectés. L'expansion rapide de l'Internet des objets (IoT) a considérablement élargi la surface d'attaque des réseaux modernes, rendant indispensable la mise en place de mécanismes de détection robustes et efficaces.
+
+Bien que les systèmes de détection d'intrusion (IDS) basés sur l'apprentissage automatique aient été largement étudiés, la plupart reposent sur des pipelines rigides et monolithiques, limitant leur réutilisation, leur reproductibilité et leur adaptation à des ensembles de données hétérogènes. Pour surmonter ces limites, le cadre proposé intègre l'automatisation, la configurabilité et l'explicabilité au sein d’un pipeline unifié.
+
+Chaque étape du flux de travail — analyse exploratoire des données, prétraitement, sélection des caractéristiques, équilibrage des classes, entraînement du modèle, évaluation et explicabilité via SHAP — est encapsulée dans des modules indépendants, contrôlés par un bloc de configuration central. Cette approche permet la génération automatique de modèles de détection et une adaptation flexible sans modification du code.
+
+Les expérimentations menées sur l’ensemble de données CIC-IoT2023, dans des scénarios de classification fine, groupée et binaire, ont permis d’identifier une configuration optimale. Une validation croisée avec le jeu de données CIC-Bot-IoT a confirmé la robustesse et la généralisabilité du framework, démontrant son efficacité pour la détection d'anomalies dans des environnements IoT hétérogènes.
+
+En outre, ce framework offre un environnement unifié pour la comparaison systématique des méthodes de détection d'anomalies, favorisant la reproductibilité, l'extensibilité et le déploiement pratique dans des systèmes IoT réels.
           </p>
           <button onclick="closeModal('article2')" class="mt-4 text-red-600 hover:underline">Fermer</button>
         </div>
       </div>
+   <!-- Modale pour Article 3 -->
+      <div id="article1" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded shadow-lg max-w-lg">
+          <h3 class="text-xl font-bold">Resilient and Adaptive Routing in Enterprise IoT: The RRP Protocol</h3>
+          <p class="text-sm text-gray-600 mt-1">Olfa DALLEL, Nadia Kabachi, Elhadj Benkhelifa</p>
+          <p class="mt-3 text-gray-700 text-justify">
+            Cet article présente l'introduction d'un langage de description uniforme pour les objets IoT sociaux (UDL-SIoT), conçu pour faciliter l'intégration des appareils IoT aux plateformes de l'Internet social des objets (SIoT).
+Dans les systèmes IoT classiques, des langages tels que le langage de description uniforme (UDL) sont utilisés pour décrire formellement les caractéristiques et fonctionnalités des objets.
+Cependant, avec l'intégration des concepts de réseaux sociaux dans l'IoT et l'émergence du SIoT, il devient nécessaire de spécifier comment les objets peuvent interagir socialement.
 
+Actuellement, la définition du profil social initial d'un objet se limite souvent à la spécification de relations sociales via des règles prédéfinies, ce qui restreint l'automatisation et l'évolutivité.
+Pour surmonter cette limite, l’UDL-SIoT propose une méthode structurée permettant de définir les caractéristiques des appareils IoT — fonctionnelles, techniques, sociales, de qualité de service et de sécurité — et de les exploiter pour créer leurs profils sociaux.
+
+De plus, un générateur de profils sociaux basé sur le Deep Learning (DL) est proposé afin d’automatiser la création des profils. Ce générateur attribue un profil social aux objets rejoignant le réseau pour la première fois et prédit leurs connexions sociales potentielles.
+
+L’évaluation, réalisée sur un jeu de données SIoT réel, démontre une précision de 92 % dans la prédiction des relations sociales. Ces relations prédites peuvent être utilisées pour automatiser la spécification des règles de socialisation, permettant ainsi aux objets IoT d'établir des relations sociales de manière autonome.
+          </p>
+          <button onclick="closeModal('article1')" class="mt-4 text-red-600 hover:underline">Fermer</button>
+        </div>
+      </div>
     </div>
   </section>
 
